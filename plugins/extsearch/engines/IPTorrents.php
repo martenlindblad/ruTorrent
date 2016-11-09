@@ -2,7 +2,7 @@
 
 class IPTorrentsEngine extends commonEngine
 {
-	public $defaults = array( "public"=>false, "page_size"=>35, "cookies"=>"www.iptorrents.com|pass=XXX;uid=XXX" );
+	public $defaults = array( "public"=>false, "page_size"=>35, "cookies"=>"www.iptorrents.eu|pass=XXX;uid=XXX" );
 	public $categories = array( 'all'=>'',
 		'Movies'=>'&l72=1', 'TV'=>'&l73=1', 'Games'=>'&l74=1', 'Music'=>'&l75=1', 'Miscellaneous'=>'&l76=1', 'XXX'=>'&l88=1' );
 
@@ -25,7 +25,7 @@ class IPTorrentsEngine extends commonEngine
 	public function action($what,$cat,&$ret,$limit,$useGlobalCats)
 	{
 		$added = 0;
-		$url = 'https://www.iptorrents.com';
+		$url = 'https://www.iptorrents.eu';
 		if($useGlobalCats)
 			$categories = array( 'all'=>'', 
 				'movies'=>'&l72=1', 'tv'=>'&l73=1', 'music'=>'&l75=1', 'games'=>'&l74=1', 
